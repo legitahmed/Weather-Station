@@ -78,14 +78,14 @@ void displayReadings(float temp, float humidity) {
     display.print("Temp: ");
     display.print(temp, 1);
     display.print(" C ");
-    display.print(isTempComfortable(temp) ? "🙂" : "!!");
+    display.print(isTempComfortable(temp) ? "!!");
 
     // Display humidity
     display.setCursor(0, 16);
     display.print("Humidity: ");
     display.print(humidity, 1);
     display.print(" % ");
-    display.print(isHumidityComfortable(humidity) ? "🙂" : "!!");
+    display.print(isHumidityComfortable(humidity) ? "!!");
 
     display.display();
 }
